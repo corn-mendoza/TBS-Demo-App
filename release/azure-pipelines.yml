@@ -13,7 +13,7 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project. 
-    kubectl vsphere login --insecure-skip-tls-verify  --tanzu-kubernetes-cluster-name devtools  --tanzu-kubernetes-cluster-namespace carnival-demo     --server 10.213.222.2 -u administrator@vsphere.local
+    kubectl vsphere login --insecure-skip-tls-verify  --tanzu-kubernetes-cluster-name devtools  --tanzu-kubernetes-cluster-namespace namespace-demo     --server 10.213.222.2 -u administrator@vsphere.local
     kubectl config use-context devtools
     kp image create dotnet-demo-$(Build.BuildNumber) --tag harbor.tools.haas-417.pez.vmware.com/library/dotnet-demo --git https://github.com/corn-pivotal/TBS-Demo-App.git --git-revision main 
     sleep 2
