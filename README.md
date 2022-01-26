@@ -1,4 +1,4 @@
 # TBS-Demo-App 
-#trigger tce
+#trigger tce workshop
 
 #anothertrigger
